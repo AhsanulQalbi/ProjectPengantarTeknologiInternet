@@ -1,0 +1,28 @@
+<link rel = "stylesheet" href = "style.css">
+<nav class="navbar navbar-expand-md" style="background-color: #ff944d ;">
+		<ul class = "navbar-nav mr-auto">
+			<li class = "nav-item active"></li>
+		</ul>
+		<a class="nav-link" style = "color : #0b172a;" href="/main">Main Menu</a>
+</nav>
+<div style="background-color: #0b172a ; id = "detailfilm">
+	<center>
+		<div class = "display-3" style = "color:white">{{detail.title}}</div>
+		<br><br><br>
+	</center>
+		<div class = "card-body">
+			<div class = "container d-inline-flex">
+				<img ng-src = "https://image.tmdb.org/t/p/w342{{detail.poster_path}}">
+				<div class = "col" style = "color:white;">
+					<p class = "h3">Title: {{detail.original_title}}</p>
+					<p class = "h4 text-justify">Overview:</p>
+					<p style = " display:inline-block; margin-left: 40px;"> {{detail.overview}}</p>
+					<p class = "h4">Release Date : {{detail.release_date}}</p>
+					<p class = "h4">Budget : {{detail.budget}}</p>
+					<p class = "h4">Production:</p>
+					<p class=  "h5" style = " display:inline-block; margin-left: 40px;" ng-repeat="prod in detail.production_companies">{{prod.name}}<br></p>
+				</div>
+			</div>
+		</div>
+	
+</div>

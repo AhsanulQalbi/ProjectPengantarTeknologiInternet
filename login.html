@@ -1,0 +1,22 @@
+	<link rel = "stylesheet" href = "style.css">
+	<div ng-controller = 'loginCtrl'>
+			<video autoplay loop muted id = "myVideo" style="opacity: 0.8;">
+				<source src="conan.mp4" type="video/mp4">
+			</video>
+			<div>
+			  <center>
+			  <br><br><br><br><br>
+			<h1 style="color :white;position: relative;">Selamat Datang di Website Nobar</h1>
+			<h1 style = "color : white;position: relative;"> Login Form</h1>
+			<h3 style = "color : white;position: relative;"> Silahkan Masukan Username/Password</h3>
+			<br><br>
+			<form action = "/" id = "myLogin" class = "form">
+				<input type = "text" placeholder = "Username"id ="username" ng-model = "username"><br>
+				<input type = "password" placeholder="Password" id ="password" ng-model = "password"><br>
+				<button type = "button" ng-click = "submit()">Login</button>
+			</form>
+			<center>
+			</div> 
+			
+	</div>
+

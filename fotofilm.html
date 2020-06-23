@@ -1,0 +1,13 @@
+<link rel = "stylesheet" href = "style.css">
+<div>
+	<div class = "card bg-dark p-4 align-self-center" style="width:350px; margin:10px; color:antiquewhite">
+		<img class = "card-img block" ng-src= "https://image.tmdb.org/t/p/w185{{movieData.poster_path}}">
+		<div class = "card-body">
+			<div class = "card-title" style="position: relative">
+				<h4>{{movieData.title}}</h4>
+			<div>
+			<p class="card-text justify-content-start">Release Date: {{movieData.release_date}}</p>
+			<a class="tombol" ng-href="/movie_detail/{{movieData.id}}">Detail</a>
+		</div>
+	</div>
+</div>
